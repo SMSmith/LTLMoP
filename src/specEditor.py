@@ -172,9 +172,9 @@ class SpecEditorFrame(wx.Frame):
         self.frame_1_menubar = wx.MenuBar()
         global MENU_IMPORT_REGION; MENU_IMPORT_REGION = wx.NewId()
         global MENU_COMPILE; MENU_COMPILE = wx.NewId()
-        global MENU_COMPILECONFIG; MENU_COMPILECONFIG = wx.NewId()
-        global MENU_CONVEXIFY; MENU_CONVEXIFY = wx.NewId()
-        global MENU_FASTSLOW; MENU_FASTSLOW = wx.NewId()
+        #global MENU_COMPILECONFIG; MENU_COMPILECONFIG = wx.NewId()
+        #global MENU_CONVEXIFY; MENU_CONVEXIFY = wx.NewId()
+        #global MENU_FASTSLOW; MENU_FASTSLOW = wx.NewId()
         global MENU_SIMULATE; MENU_SIMULATE = wx.NewId()
         global MENU_SIMCONFIG; MENU_SIMCONFIG = wx.NewId()
         global MENU_ANALYZE; MENU_ANALYZE = wx.NewId()
@@ -199,10 +199,10 @@ class SpecEditorFrame(wx.Frame):
         self.frame_1_menubar.Append(wxglade_tmp_menu, "&Edit")
         wxglade_tmp_menu = wx.Menu()
         wxglade_tmp_menu.Append(MENU_COMPILE, "&Compile\tF5", "", wx.ITEM_NORMAL)
-        wxglade_tmp_menu_sub = wx.Menu()
-        wxglade_tmp_menu_sub.Append(MENU_CONVEXIFY, "Decompose workspace into convex regions", "", wx.ITEM_CHECK)
-        wxglade_tmp_menu_sub.Append(MENU_FASTSLOW, "Enable \"fast-slow\" synthesis", "", wx.ITEM_CHECK)
-        wxglade_tmp_menu.AppendMenu(MENU_COMPILECONFIG, "Compilation options", wxglade_tmp_menu_sub, "")
+        #wxglade_tmp_menu_sub = wx.Menu()
+        #wxglade_tmp_menu_sub.Append(MENU_CONVEXIFY, "Decompose workspace into convex regions", "", wx.ITEM_CHECK)
+        #wxglade_tmp_menu_sub.Append(MENU_FASTSLOW, "Enable \"fast-slow\" synthesis", "", wx.ITEM_CHECK)
+        #wxglade_tmp_menu.AppendMenu(MENU_COMPILECONFIG, "Compilation options", wxglade_tmp_menu_sub, "")
         wxglade_tmp_menu.AppendSeparator()
         wxglade_tmp_menu.Append(MENU_SIMULATE, "&Simulate\tF6", "", wx.ITEM_NORMAL)
         wxglade_tmp_menu.Append(MENU_SIMCONFIG, "Confi&gure Simulation...\tShift-F6", "", wx.ITEM_NORMAL)
@@ -264,8 +264,8 @@ class SpecEditorFrame(wx.Frame):
         self.Bind(wx.EVT_MENU, self.onMenuCopy, id=wx.ID_COPY)
         self.Bind(wx.EVT_MENU, self.onMenuPaste, id=wx.ID_PASTE)
         self.Bind(wx.EVT_MENU, self.onMenuCompile, id=MENU_COMPILE)
-        self.Bind(wx.EVT_MENU, self.onMenuSetCompileOptions, id=MENU_CONVEXIFY)
-        self.Bind(wx.EVT_MENU, self.onMenuSetCompileOptions, id=MENU_FASTSLOW)
+        #self.Bind(wx.EVT_MENU, self.onMenuSetCompileOptions, id=MENU_CONVEXIFY)
+        #self.Bind(wx.EVT_MENU, self.onMenuSetCompileOptions, id=MENU_FASTSLOW)
         self.Bind(wx.EVT_MENU, self.onMenuSimulate, id=MENU_SIMULATE)
         self.Bind(wx.EVT_MENU, self.onMenuConfigSim, id=MENU_SIMCONFIG)
         self.Bind(wx.EVT_MENU, self.onMenuAnalyze, id=MENU_ANALYZE)
@@ -352,8 +352,8 @@ class SpecEditorFrame(wx.Frame):
         self.text_ctrl_spec.MarkerDeleteAll(MARKER_SAFE)
         self.text_ctrl_spec.MarkerDeleteAll(MARKER_LIVE)
         self.text_ctrl_log.Clear()
-        self.frame_1_menubar.Check(MENU_CONVEXIFY, self.proj.compile_options["convexify"])
-        self.frame_1_menubar.Check(MENU_FASTSLOW, self.proj.compile_options["fastslow"])
+        #self.frame_1_menubar.Check(MENU_CONVEXIFY, self.proj.compile_options["convexify"])
+        #self.frame_1_menubar.Check(MENU_FASTSLOW, self.proj.compile_options["fastslow"])
 
         self.SetTitle("Specification Editor - Untitled")
 
@@ -684,8 +684,8 @@ class SpecEditorFrame(wx.Frame):
         self.text_ctrl_spec.EmptyUndoBuffer()
 
         # Set compilation option checkboxes
-        self.frame_1_menubar.Check(MENU_CONVEXIFY, self.proj.compile_options["convexify"])
-        self.frame_1_menubar.Check(MENU_FASTSLOW, self.proj.compile_options["fastslow"])
+        #self.frame_1_menubar.Check(MENU_CONVEXIFY, self.proj.compile_options["convexify"])
+        #self.frame_1_menubar.Check(MENU_FASTSLOW, self.proj.compile_options["fastslow"])
     
         self.dirty = False
 
@@ -1212,9 +1212,10 @@ class SpecEditorFrame(wx.Frame):
         event.Skip(False)
 
     def onMenuSetCompileOptions(self, event):  # wxGlade: SpecEditorFrame.<event_handler>
-        self.proj.compile_options["convexify"] = self.frame_1_menubar.IsChecked(MENU_CONVEXIFY)
-        self.proj.compile_options["fastslow"] = self.frame_1_menubar.IsChecked(MENU_FASTSLOW)
-        self.dirty = True
+        pass
+        #self.proj.compile_options["convexify"] = self.frame_1_menubar.IsChecked(MENU_CONVEXIFY)
+        #self.proj.compile_options["fastslow"] = self.frame_1_menubar.IsChecked(MENU_FASTSLOW)
+        #self.dirty = True
 
 # end of class SpecEditorFrame
 
