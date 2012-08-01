@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" width="300" height="189">
-<path style="fill:red;fill-opacity:1.0;fill-rule:evenodd;stroke:black;stroke-width:1.0;" d="M 0, 44.3804 L 0, 189.337 L 69.4524, 189.337 L 69.4524, 120.173 L 69.4524, 117.867 L 68.2997, 46.3977 z "/>
-<path style="fill:green;fill-opacity:1.0;fill-rule:evenodd;stroke:black;stroke-width:1.0;" d="M 232.565, 50.1441 L 132.853, 50.4323 L 132.853, 117.291 L 132.853, 120.173 L 232.277, 120.173 z "/>
-<path style="fill:blue;fill-opacity:1.0;fill-rule:evenodd;stroke:black;stroke-width:1.0;" d="M 261.383, 0 L 104.035, 0 L 68.2997, 46.3977 L 132.565, 48.415 L 234.294, 48.415 L 299.712, 46.9741 z "/>
-<path style="fill:yellow;fill-opacity:1.0;fill-rule:evenodd;stroke:black;stroke-width:1.0;" d="M 234.294, 120.173 L 232.277, 120.173 L 132.853, 120.173 L 69.4524, 120.173 L 69.4524, 189.337 L 234.294, 189.337 z "/>
-<path style="fill:red;fill-opacity:1.0;fill-rule:evenodd;stroke:black;stroke-width:1.0;" d="M 68.2997, 46.3977 L 69.4524, 117.867 L 132.853, 117.291 L 132.853, 50.4323 L 132.565, 48.415 z "/>
-<path style="fill:green;fill-opacity:1.0;fill-rule:evenodd;stroke:black;stroke-width:1.0;" d="M 299.712, 46.9741 L 234.294, 48.415 L 234.294, 120.173 L 234.294, 189.337 L 300, 189.337 z "/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1041" height="657">
+<path style="fill:red;fill-opacity:1.0;fill-rule:evenodd;stroke:black;stroke-width:1.0;" d="M 806, 240 L 813, 240 L 813, 489 L 460, 489 L 461, 482 L 461, 481 L 461, 482 L 807, 483 z "/>
+<path style="fill:green;fill-opacity:1.0;fill-rule:evenodd;stroke:black;stroke-width:1.0;" d="M 241, 240 L 241, 239 L 241, 240 L 461, 240 L 461, 241 L 461, 250 L 461, 251 L 461, 250 L 241, 248 z "/>
+<path style="fill:blue;fill-opacity:1.0;fill-rule:evenodd;stroke:black;stroke-width:1.0;" d="M 0, 0 L 241, 0 L 813, 0 L 1041, 0 L 1040, 494 L 907, 657 L 361, 657 L 237, 496 L 0, 503 z "/>
+<path style="fill:yellow;fill-opacity:1.0;fill-rule:evenodd;stroke:black;stroke-width:1.0;" d="M 241, 248 L 461, 250 L 461, 251 L 461, 252 L 461, 481 L 461, 482 L 460, 489 L 237, 496 z "/>
+<path style="fill:red;fill-opacity:1.0;fill-rule:evenodd;stroke:black;stroke-width:1.0;" d="M 0, 0 L 241, 0 L 241, 239 L 241, 240 L 241, 248 L 237, 496 L 0, 503 z "/>
+<path style="fill:green;fill-opacity:1.0;fill-rule:evenodd;stroke:black;stroke-width:1.0;" d="M 813, 489 L 1040, 494 L 907, 657 L 361, 657 L 237, 496 L 460, 489 z "/>
+<path style="fill:blue;fill-opacity:1.0;fill-rule:evenodd;stroke:black;stroke-width:1.0;" d="M 813, 240 L 813, 0 L 1041, 0 L 1040, 494 L 813, 489 z "/>
+<path style="fill:yellow;fill-opacity:1.0;fill-rule:evenodd;stroke:black;stroke-width:1.0;" d="M 461, 482 L 461, 481 L 461, 252 L 461, 251 L 461, 250 L 461, 241 L 461, 240 L 806, 240 L 807, 483 z "/>
+<path style="fill:red;fill-opacity:1.0;fill-rule:evenodd;stroke:black;stroke-width:1.0;" d="M 241, 239 L 241, 0 L 813, 0 L 813, 240 L 806, 240 L 461, 240 L 241, 240 z "/>
 </svg>
