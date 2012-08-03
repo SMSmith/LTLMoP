@@ -19,7 +19,7 @@ sudo easy_install -U rosinstall vcstools rosdep
 sudo apt-get install ros-fuerte-pr2-desktop
 echo "source /opt/ros/fuerte/setup.bash" >> ~/.bashrc
 . ~/.bashrc
-source /opt/ros/furete/setup.bash
+source /opt/ros/fuerte/setup.bash
 sudo apt-get install python-rsvg
 PATHSM='/opt/ros/fuerte/stacks/simulator_gazebo/gazebo_worlds'
 sudo cp ltlmop_map.world $PATHSM/worlds/ltlmop_map.world
