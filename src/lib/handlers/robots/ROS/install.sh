@@ -34,3 +34,4 @@ if ! grep -q ltlmop $PATHLOC/scripts/Gazebo.material
 	then sudo cat ltlmop.material >> $PATHLOC/scripts/Gazebo.material 
 fi
 sudo chmod 777 $PATHLOC/scripts/Gazebo.material
+ROS_WORKSPACE=/opt/ros/fuerte
