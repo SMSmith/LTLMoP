@@ -12,7 +12,7 @@ sudo apt-get update
 sudo apt-get install ros-fuerte-desktop-full
 echo "source /opt/ros/fuerte/setup.bash" >> ~/.bashrc
 . ~/.bashrc
-source /opt/ros/furete/setup.bash
+source /opt/ros/fuerte/setup.bash
 sudo apt-get install python-setuptools python-pip
 sudo pip install -U rosinstall vcstools rosdep
 sudo easy_install -U rosinstall vcstools rosdep
