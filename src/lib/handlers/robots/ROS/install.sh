@@ -6,8 +6,7 @@ unzip Polygon-2.0.5.zip
 cd Polygon-2.0.5
 sudo python setup.py install
 cd ..
-sudo mkdir /etc/apt/sources.list.d/ros
-sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu precise main" > /etc/apt/sources.list.d/ros/latest.list'
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu precise main" > /etc/apt/sources.list.d/ros-latest.list'
 wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
 sudo apt-get update
 sudo apt-get install ros-fuerte-desktop-full
